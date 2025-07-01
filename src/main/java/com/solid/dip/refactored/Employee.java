@@ -1,5 +1,6 @@
 package com.solid.dip.refactored;
 
+// Clase que representa un empleado
 public class Employee {
     private String fullName;
     private Integer salary;

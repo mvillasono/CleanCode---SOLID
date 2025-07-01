@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.solid.dip.refactored.Employee;
 
+// Implementación concreta de la persistencia de empleados en una base de datos MySQL
 public class MySqlEmployeePersistence implements EmployeePersistence {
 
     public MySqlEmployeePersistence(String url, String user, String password) {
@@ -13,13 +14,13 @@ public class MySqlEmployeePersistence implements EmployeePersistence {
 
     @Override
     public List<Employee> findAll() {
-        // Database Query
+        // Aquí iría la consulta a la base de datos
         return new ArrayList<Employee>();
     }
 
     @Override
     public void save(Employee employee) {
-        // Database Save
+        // Aquí iría el guardado en la base de datos
 
     }
 }

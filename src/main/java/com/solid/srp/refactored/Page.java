@@ -1,5 +1,6 @@
 package com.solid.srp.refactored;
 
+// Clase que representa una página de un libro
 public class Page {
     private Integer number;
     private String content;
@@ -9,10 +10,12 @@ public class Page {
         this.content = content;
     }
 
+    // Devuelve el número de página
     public Integer getNumber() {
         return number;
     }
 
+    // Devuelve el contenido de la página
     public String getContent() {
         return content;
     }

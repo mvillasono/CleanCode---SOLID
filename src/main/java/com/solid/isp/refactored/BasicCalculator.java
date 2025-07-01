@@ -1,5 +1,6 @@
 package com.solid.isp.refactored;
 
+// Clase que implementa solo operaciones básicas, cumpliendo ISP
 public class BasicCalculator implements BasicOperations{
     @Override
     public Double add(Double a, Double b) {

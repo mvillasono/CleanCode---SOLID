@@ -1,5 +1,7 @@
 package com.solid.isp.badexample;
 
+// Ejemplo INCORRECTO: Esta interfaz viola el Principio de Segregación de Interfaces (ISP)
+// porque obliga a todas las clases que la implementan a definir métodos que no necesitan.
 public interface Operations {
     public Double add(Double a, Double b);
 

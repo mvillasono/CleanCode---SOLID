@@ -3,6 +3,7 @@ package com.solid.dip.badexample;
 import java.util.ArrayList;
 import java.util.List;
 
+// Implementación concreta de la persistencia de empleados en memoria
 public class EmployeeMemoryPersistence implements EmployeePersistence {
 
     private List<Employee> employees;

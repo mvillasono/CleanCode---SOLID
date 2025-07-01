@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.solid.dip.refactored.Employee;
 
+// Implementación concreta de la persistencia de empleados en memoria
 public class EmployeeMemoryPersistence implements EmployeePersistence {
 
     private List<Employee> employees;

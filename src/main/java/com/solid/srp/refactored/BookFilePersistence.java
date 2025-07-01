@@ -6,8 +6,10 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
+// Implementación de la interfaz BookPersistence que guarda el libro en un archivo
+// Esta clase se encarga SOLO de la persistencia, cumpliendo SRP
 public class BookFilePersistence implements BookPersistence {
-public static final String BOOK_DIRECTORY_PATH = "/tmp";
+    public static final String BOOK_DIRECTORY_PATH = "/tmp";
 
     @Override
     public void save(Book book) {
@@ -28,6 +30,7 @@ public static final String BOOK_DIRECTORY_PATH = "/tmp";
 
             writer.close();
         } catch (IOException e) {
+            // Si ocurre un error al guardar, se lanza una excepción personalizada
             throw new BookPersistenceException();
         }
 

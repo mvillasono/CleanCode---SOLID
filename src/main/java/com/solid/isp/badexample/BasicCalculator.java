@@ -1,5 +1,7 @@
 package com.solid.isp.badexample;
 
+// Ejemplo INCORRECTO: Esta clase se ve forzada a implementar métodos que no necesita (seno y coseno),
+// lanzando excepciones en esos métodos. Esto viola el ISP.
 public class BasicCalculator implements Operations{
     @Override
     public Double add(Double a, Double b) {
@@ -21,6 +23,7 @@ public class BasicCalculator implements Operations{
         return a / b;
     }
 
+    // Métodos innecesarios para una calculadora básica
     @Override
     public Double sine(Double angle) {
         throw new UnsupportedOperationException(
